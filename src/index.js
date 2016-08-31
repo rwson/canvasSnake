@@ -55,7 +55,7 @@
 
     //  generate a random color(#fabcde)
     function _randomColor() {
-        return Math.random().toString(16).slice(2, 8);
+        return "#" + Math.random().toString(16).slice(2, 8);
     }
 
     //  generate a random number between min and max
@@ -142,7 +142,7 @@
                 y: info.y,
                 w: 20,
                 h: 20,
-                color: "#" + _randomColor()
+                color: _randomColor()
             };
 
             this.rect = _DrawRect(pos);
